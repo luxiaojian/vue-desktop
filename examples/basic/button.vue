@@ -4,9 +4,13 @@
   </div>
 
   <div class="button-example">
-    <d-button type="primary">Primary Button</d-button>
-    <d-button>Secondary Button (default)</d-button>
-    <d-button type="phantom">Phantom Button</d-button>
+    <d-button type="default">Default</d-button>
+    <d-button type="primary">Primary</d-button>
+    <d-button type="success">Success</d-button>
+    <d-button type="danger">Danger</d-button>
+    <d-button type="warning">Warning</d-button>
+    <d-button type="info">Info Button</d-button>
+    <d-button type="ghost">ghost Button</d-button>
   </div>
 
   <div class="button-example">

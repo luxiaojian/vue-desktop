@@ -1,7 +1,7 @@
 // This config file is for development setup using
 // webpack-dev-server.
 
-var webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        loader: 'style!css'
       },
       {
         test: /\.html$/,
@@ -37,7 +37,13 @@ module.exports = {
         loader: 'url?limit=100&name=[path][name].[hash:6].[ext]'
       }
     ]
+  },
+  vue: {
+    autoprefixer: {
+      browsers: ['last 2 versions']
+    }
   }
+
 };
 
 if (process.env.NODE_ENV === 'production') {

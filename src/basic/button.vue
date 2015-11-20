@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" :class="{'btn-primary': type === 'primary', 'btn-phantom': type === 'phantom', 'btn-lg': size === 'large', 'btn-sm': size === 'small', 'disabled': disabled}">
+  <button class="btn" :class="{'btn-default': type === 'default', 'btn-primary': type === 'primary', 'btn-danger': type === 'danger', 'btn-success': type === 'success', 'btn-warning': type === 'warning', 'btn-info': type === 'info', 'btn-ghost': type === 'ghost', 'btn-lg': size === 'large', 'btn-sm': size === 'small', 'disabled': disabled}">
     <slot></slot>
   </button>
 </template>
@@ -9,11 +9,11 @@
     outline: none;
     display: inline-block;
     text-align: center;
-    padding: 4px 12px;
-    border-radius: 3px;
-    border: solid 1px #d0dbe6;
+    padding: 11px 22px;
+    border-radius: 2px;
+    border: none;
     background-color: #d0dbe6;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     color: #6f7e95;
     text-decoration: none;
@@ -21,39 +21,50 @@
     vertical-align: middle;
     cursor: pointer;
     transition: .3s;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .24), 0 1px 3px rgba(0, 0, 0, .12);
   }
 
   .btn:hover {
-    background-color: #639af5;
-    border-color: #639af5;
-    color: #fff;
+    opacity: 0.6;
+  }
+
+  .btn-default {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, .5);
   }
 
   .btn-primary {
-    background-color: #47bac1;
-    border-color: #47bac1;
+    background-color: #2196F3;
     color: #fff;
   }
 
-  .btn.btn-primary:hover {
-    background-color: #639af5;
-    border-color: #639af5;
-  }
-
-  .btn:active,
-  .btn.btn-primary:active {
-    background-color: #6f7e95;
-    border-color: #6f7e95;
+  .btn-success {
+    background-color: #4AAA4A;
     color: #fff;
   }
 
-  .btn-phantom {
-    background-color: #fff;
+  .btn-warning {
+    background-color: #F37B1D;
+    color: #fff;
+  }
+
+  .btn-danger {
+    background-color: #F44336;
+    color: #fff;
+  }
+
+  .btn-info {
+    background-color: #3BB4F2;
+    color: #fff;
+  }
+
+  .btn-ghost {
+    background-color: none;
     border-color: #ccc;
     color: #333;
   }
 
-  .btn.btn-phantom:hover {
+  .btn.btn-ghost:hover {
     background-color: #fff;
     color: #0089dc;
     border-color: #0089dc;
@@ -71,9 +82,8 @@
   .btn.disabled,
   .btn.disabled:hover {
     cursor: not-allowed;
-    color: #ccc;
-    background-color: #eee;
-    border-color: #ccc;
+    color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, .12);
   }
 
   .btn .fa {

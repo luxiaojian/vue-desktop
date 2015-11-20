@@ -1,7 +1,7 @@
 # Schema 使用说明
 
 ## 介绍
-vue-desktop 项目中 Field 和 Grid 的使用依赖于 Schema，Schema 是 vie-desktop 区别于其他 UI 项目的特点，在使用 vie-desktop 之前，需要先了解 Schema 的概念和用途。
+vue-desktop 项目中 Field 和 Grid 的使用依赖于 Schema，Schema 是 vue-desktop 区别于其他 UI 项目的特点，在使用 vue-desktop 之前，需要先了解 Schema 的概念和用途。
 
 ## 简单示例
 Schema 用来描述表单里面的一个数据显示使用的 label、数据类型、校验规则等。
@@ -93,5 +93,5 @@ var userSchema = new Schema({
 | validate(object, options) | 校验 object 是否符合 schema 中定义的规则。 |
 | validateProperty(object, property) | 校验 object 的某个 property 是否符合规则。 |
 | save(object) | 保存 object 当前的值，可以通过 reset 方法来恢复保存的值。 |
-| reset(object) | 恢复保存的 object 的值，如果没有通过 save 方法保存过，则恢复为一个新建的对象。| 
+| reset(object) | 恢复保存的 object 的值，如果没有通过 save 方法保存过，则恢复为一个新建的对象。|
 | getPropertyDescriptor(property) | 取得某个 property 的定义。 |
