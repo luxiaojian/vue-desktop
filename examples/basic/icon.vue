@@ -1,9 +1,9 @@
 <template>
-  <div class="icon-example">
+  <div class="card">
     <i class="fa fa-camera-retro"></i> fa-camera-retro
   </div>
 
-  <div class="icon-example">
+  <div class="card">
     <i class="fa fa-camera-retro fa-lg"></i> fa-lg
     <i class="fa fa-camera-retro fa-2x"></i> fa-2x
     <i class="fa fa-camera-retro fa-3x"></i> fa-3x
@@ -11,14 +11,14 @@
     <i class="fa fa-camera-retro fa-5x"></i> fa-5x
   </div>
 
-  <div class="icon-example">
+  <div class="card">
     <a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
     <a href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
     <a href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
     <a href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
   </div>
 
-  <div class="icon-example">
+  <div class="card">
     <ul class="fa-ul">
       <li><i class="fa-li fa fa-check-square"></i>List icons</li>
       <li><i class="fa-li fa fa-check-square"></i>can be used</li>
@@ -27,15 +27,16 @@
     </ul>
   </div>
 
-  <div class="icon-example">
+  <div class="card">
     <i class="fa fa-spinner fa-spin fa-3x"></i>
     <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
     <i class="fa fa-refresh fa-spin fa-3x"></i>
     <i class="fa fa-cog fa-spin fa-3x"></i>
     <i class="fa fa-spinner fa-pulse fa-3x"></i>
   </div>
-
-  <div class="icon-list">
+  <div class="card">
+    <div class="icon-list">
+    </div>
   </div>
 </template>
 

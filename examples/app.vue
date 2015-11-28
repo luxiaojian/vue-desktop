@@ -72,7 +72,7 @@
     padding: 12px;
     box-sizing: border-box;
     overflow: auto;
-    background-color: #ecf2f6;
+    background-color: #eee;
   }
   .demolist {
     list-style: none;

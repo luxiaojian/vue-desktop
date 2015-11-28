@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" :class="{'btn-default': type === 'default', 'btn-primary': type === 'primary', 'btn-danger': type === 'danger', 'btn-success': type === 'success', 'btn-warning': type === 'warning', 'btn-info': type === 'info', 'btn-ghost': type === 'ghost', 'btn-lg': size === 'large', 'btn-sm': size === 'small', 'disabled': disabled}">
+  <button class="btn" :class="{'btn-primary': type === 'primary', 'btn-danger': type === 'danger', 'btn-success': type === 'success', 'btn-warning': type === 'warning', 'btn-info': type === 'info', 'btn-ghost': type === 'ghost', 'btn-lg': size === 'large', 'btn-sm': size === 'small', 'disabled': disabled}">
     <slot></slot>
   </button>
 </template>
@@ -12,7 +12,8 @@
     padding: 11px 22px;
     border-radius: 2px;
     border: none;
-    background-color: #d0dbe6;
+    background-color: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, .5);
     font-size: 14px;
     font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     color: #6f7e95;
@@ -28,23 +29,18 @@
     opacity: 0.6;
   }
 
-  .btn-default {
-    background-color: rgba(0, 0, 0, 0.12);
-    color: rgba(0, 0, 0, .5);
-  }
-
   .btn-primary {
     background-color: #2196F3;
     color: #fff;
   }
 
   .btn-success {
-    background-color: #4AAA4A;
+    background-color: #4CAF50;
     color: #fff;
   }
 
   .btn-warning {
-    background-color: #F37B1D;
+    background-color: #FF9800;
     color: #fff;
   }
 
@@ -59,24 +55,23 @@
   }
 
   .btn-ghost {
-    background-color: none;
-    border-color: #ccc;
-    color: #333;
+    background-color: transparent;
+    border:2px solid #000;
+    color: #000;
   }
 
   .btn.btn-ghost:hover {
-    background-color: #fff;
-    color: #0089dc;
-    border-color: #0089dc;
+    background-color: #000;
+    color: #fff;
   }
 
   .btn-lg {
-    font-size: 14px;
-    padding: 4px 15px;
+    font-size: 18px;
+    padding: 14px 32px;
   }
 
   .btn-sm {
-    padding: 2px 6px;
+    padding: 6px 16px;
   }
 
   .btn.disabled,

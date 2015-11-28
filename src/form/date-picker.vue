@@ -11,8 +11,10 @@
   }
 
   .datepicker-header {
+    background-color: #2196F3;
+    color: #fff;
     position: relative;
-    padding: 5px;
+    padding: 25px 0 10px;
   }
 
   .datepicker-header > label {
@@ -26,7 +28,7 @@
   }
 
   .datepicker-header > label:hover {
-    background: #33bcff;
+    background: rgba(0, 0, 0, 0.14);
     color: #fff;
   }
 

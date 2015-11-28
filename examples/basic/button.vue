@@ -1,32 +1,36 @@
 <template>
-  <div class="button-example">
-    <d-button>Button</d-button>
-  </div>
-
-  <div class="button-example">
-    <d-button type="default">Default</d-button>
+  <h2>Buttons</h2>
+  <div class="card">
+    <h3>Options</h3>
+    <d-button>Default</d-button>
     <d-button type="primary">Primary</d-button>
     <d-button type="success">Success</d-button>
     <d-button type="danger">Danger</d-button>
     <d-button type="warning">Warning</d-button>
     <d-button type="info">Info Button</d-button>
-    <d-button type="ghost">ghost Button</d-button>
+    <d-button type="ghost">Ghost Button</d-button>
   </div>
 
-  <div class="button-example">
+  <div class="card">
+    <h3>Sizes</h3>
+    <d-button type= "primary" size ="large">Large Button</d-button>
+    <d-button type= "primary" size = "small">Small Button</d-button>
+  </div>
+
+  <div class="card">
     <d-button type="primary" icon="fa-home">Home</d-button>
     <d-button type="primary" icon="fa-book">Library</d-button>
     <d-button type="primary" icon="fa-pencil">Applications</d-button>
     <d-button type="primary" icon="fa-cog">Settings</d-button>
   </div>
 
-  <div class="button-example">
+  <div class="card">
     <d-button type="primary" size="large" icon="fa-home">Large Button</d-button>
     <d-button type="primary" icon="fa-home">Medium Button (default)</d-button>
     <d-button type="primary" size="small" icon="fa-home">Small Button</d-button>
   </div>
 
-  <div class="button-example">
+  <div class="card">
     <d-button type="primary">Primary Button</d-button>
     <d-button type="primary" disabled>Primary Button (disabled)</d-button>
     <d-button>Secondary Button</d-button>
@@ -35,7 +39,7 @@
     <d-button type="phantom" disabled>Phantom Button (disabled)</d-button>
   </div>
 
-  <div class="button-example">
+  <div class="card">
     <d-button-group>
       <d-button type="primary">确定</d-button>
       <d-button type="primary">取消</d-button>
@@ -55,7 +59,7 @@
     </d-button-group>
   </div>
 
-  <div class="button-example">
+  <div class="card">
     <d-button-group>
       <d-button type="phantom">1</d-button>
       <d-button type="phantom">2</d-button>
@@ -66,7 +70,7 @@
     </d-button-group>
   </div>
 
-  <div class="button-example">
+  <div class="card">
     <d-button-group size="large">
       <d-button type="phantom">大</d-button>
       <d-button type="phantom">大</d-button>
@@ -86,8 +90,11 @@
 </template>
 
 <style>
-  div.button-example {
+  div.card {
     margin-top: 20px;
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   }
 </style>
 
